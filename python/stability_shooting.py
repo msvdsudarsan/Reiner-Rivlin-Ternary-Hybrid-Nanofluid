@@ -22,7 +22,7 @@ shot), Hf(0)=0. For fixed gamma, alpha is chosen (1D root-find) so that
 Ff(eta_max) is small; the SECOND far-field condition Gf(eta_max)=0 is
 then used as the residual whose root in gamma gives the eigenvalue.
 
-PYTHON IMPLEMENTATION -- not part of any other computational environment.
+PYTHON IMPLEMENTATION -- NOT MATLAB R2026a.
 """
 
 import numpy as np

@@ -1,9 +1,9 @@
 """
 effective_properties.py
 
-Python mirror of the corresponding external reference script. See that file's
+Python mirror of matlab/effective_properties.m. See that file's
 docstring for the physical basis of each correlation (Eqs. 7-10 of
-main.tex). PYTHON IMPLEMENTATION -- not an external reference implementation.
+main.tex). PYTHON IMPLEMENTATION -- not MATLAB R2026a.
 """
 
 from dataclasses import dataclass

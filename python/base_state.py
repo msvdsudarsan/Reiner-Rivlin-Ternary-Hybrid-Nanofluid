@@ -21,9 +21,9 @@ letting solve_bvp concentrate mesh refinement exactly where each field
 needs it. This is both more numerically robust AND a direct
 computational demonstration of Proposition 1's decoupling claim.
 
-PYTHON IMPLEMENTATION -- not part of any other computational environment.
+PYTHON IMPLEMENTATION -- NOT MATLAB R2026a.
 
-ADDENDUM (found during cross-verification testing, see README_python_notes.md Bug
+ADDENDUM (found via MATLAB cross-check, see README_python_notes.md Bug
 4): eta_inf=15 was subsequently found to be an insufficient domain size
 for K=0.3 cold-start solves at these parameters -- solve_momentum_robust
 below now defaults to eta_inf=40 (see parameters.py), confirmed stable
@@ -76,7 +76,7 @@ def solve_momentum(p: Parameters, eta_mesh=None, y_guess=None, tol=1e-10, max_no
 
 def solve_momentum_robust(p: Parameters, tol=1e-10, max_nodes=300000):
     """Robust momentum solve via TWO-STAGE continuation, found necessary
-    after a third round of cross-verification testing (see
+    after a third round of cross-verification with MATLAB (see
     python/README_python_notes.md "Bug 5" for the full story).
 
     Stage 1 -- DOMAIN continuation at K=0: solve at a small, easily-
@@ -96,7 +96,7 @@ def solve_momentum_robust(p: Parameters, tol=1e-10, max_nodes=300000):
     the previous.
 
     Doing stage 2 first at the full target eta_inf directly (an earlier
-    version of this function) is what caused an external solver to require
+    version of this function) is what caused MATLAB's bvp4c to require
     tens of thousands of mesh points and still fail to converge
     (residuals ~1e-2, not just slow) when this was cross-checked:
     jumping straight to a large domain with a K=0 cold-start guess is a

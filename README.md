@@ -1,21 +1,25 @@
-# Nonlinear Stability and Bifurcation Analysis of Reiner–Rivlin Ternary Hybrid Nanofluid Flow over a Shrinking Rotating Disk with Chemical Reaction Effects
+# Reiner-Rivlin Ternary Hybrid Nanofluid — Computational Reproducibility Repository
 
-Python code, data, and figures for the manuscript `Main.pdf`
-(LaTeX source: `Main.tex`, references: `References.bib`).
+Python code, data, and figures supporting the manuscript "Structural
+Decoupling and Regularity-Boundary Analysis of Reiner-Rivlin Ternary
+Hybrid Nanofluid Flow over a Shrinking Rotating Disk with Chemical
+Reaction Effects" (S. V. D. S. Madhyannapu, K. Subbarao; manuscript
+under preparation for submission).
 
-**Authors:** Sri Venkata Durga Sudarsan Madhyannapu (corresponding author),
-Kankipati Subbarao — Department of Mathematics, Dr. RVR NRI Institute
-of Technology (Deemed to be University), Andhra Pradesh, India.
+This repository is maintained as a **computational reproducibility
+archive** — it contains the code, data, and figures needed to
+reproduce every numerical result in the manuscript, but not the
+manuscript source itself, which remains unpublished pending journal
+submission.
 
 ## Repository contents
 
-- `Main.pdf` / `Main.tex` / `References.bib` — the manuscript.
 - `python/` — the complete computational implementation (NumPy/SciPy).
   Every numerical value and figure in the manuscript was produced by
   this code and independently re-executed by the corresponding author
   in Google Colab, with console output confirming exact agreement.
   See `python/run_all.py` to reproduce the full workflow, or run the
-  individual scripts for Examples 1–4, validation, and figure
+  individual scripts for Examples 1-4, validation, and figure
   generation separately. `python/README_python_notes.md` documents
   real numerical issues found and fixed during development.
 - `python/colab_ready_scripts/` — six self-contained, independently

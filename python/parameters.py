@@ -1,10 +1,10 @@
 """
 parameters.py
 
-Python mirror of the corresponding external reference script. Values are kept identical so that
-results are directly comparable to an external reference implementation run the user will
+Python mirror of matlab/parameters.m. Values are kept identical so that
+results are directly comparable to the MATLAB R2026a run the user will
 perform independently. This is a PYTHON (numpy/scipy) implementation,
-not part of any other computational environment -- every result derived from this module must be
+NOT MATLAB R2026a -- every result derived from this module must be
 labelled as such in the manuscript.
 """
 
@@ -17,7 +17,7 @@ class Parameters:
     K: float = 0.3
 
     # disk kinematics
-    lam: float = 0.5      # F(0) = lambda ; corresponds to the corresponding external parameter
+    lam: float = 0.5      # F(0) = lambda ; corresponds to MATLAB p.lambda
     S: float = 0.5        # H(0) = -S
 
     # chemical reaction

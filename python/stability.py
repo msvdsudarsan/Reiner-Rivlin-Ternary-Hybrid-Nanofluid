@@ -4,7 +4,7 @@ stability.py
 Python (scipy.integrate.solve_bvp) implementation of the linearized
 temporal stability eigenvalue problem.
 
-CORRECTION MADE DURING THIS RUN relative to the first delivered an external solver
+CORRECTION MADE DURING THIS RUN relative to the first delivered MATLAB
 code: main.tex's linearized equations (17)-(20) show that the THETA and
 PHI perturbation equations do not couple to each other at all (each is
 forced only by the momentum perturbation Hf, not by one another). The
@@ -23,7 +23,7 @@ at the wall, since wall values are prescribed/not perturbed) plus a
 derivative normalization (Weidman-type relaxation), and decay at the
 truncated far field.
 
-PYTHON IMPLEMENTATION -- not part of any other computational environment.
+PYTHON IMPLEMENTATION -- NOT MATLAB R2026a.
 """
 
 import numpy as np

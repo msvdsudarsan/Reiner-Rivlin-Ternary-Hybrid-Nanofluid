@@ -7,9 +7,9 @@ validation checks, continuation search (Example 2), stability
 eigenvalues (Example 3, partial -- see notes below), and thermal/
 species response (Example 4).
 
-THIS IS THE PYTHON/SCIPY VERIFICATION IMPLEMENTATION, not part of any other computational environment.
+THIS IS THE PYTHON/SCIPY VERIFICATION IMPLEMENTATION, NOT MATLAB R2026a.
 Every numerical value it produces is marked [Python/SciPy] in main.tex
-and is PROVISIONAL pending the independent an external reference implementation cross-check
+and is PROVISIONAL pending the independent MATLAB R2026a cross-check
 described in main.tex Section "Computational Environment".
 
 Run: python3 run_all.py
