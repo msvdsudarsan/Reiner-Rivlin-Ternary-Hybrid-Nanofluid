@@ -22,12 +22,8 @@ Two stages are used:
      through the fold.
 
 This IS therefore a real (if reduced-plane, not full-function-space)
-pseudo-arclength scheme, an upgrade over the natural-parameter-only
-continuation shipped in the first version of matlab/pseudo_arclength_continuation.m
-(which is flagged there as unable to cross a fold). The MATLAB file has
-been corrected to match this approach -- see matlab/pseudo_arclength_continuation.m.
-
-PYTHON IMPLEMENTATION -- NOT MATLAB R2026a.
+pseudo-arclength scheme, an upgrade over simple natural-parameter-only
+continuation, which is unable to cross a genuine fold on its own.
 """
 
 import numpy as np

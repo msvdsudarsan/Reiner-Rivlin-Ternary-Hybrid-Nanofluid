@@ -1,9 +1,9 @@
 """
 effective_properties.py
 
-Python mirror of matlab/effective_properties.m. See that file's
-docstring for the physical basis of each correlation (Eqs. 7-10 of
-main.tex). PYTHON IMPLEMENTATION -- not MATLAB R2026a.
+Ternary hybrid nanofluid effective-property correlations (viscosity,
+thermal conductivity, mass diffusivity) implementing Eqs. 7-10 of the
+manuscript.
 """
 
 from dataclasses import dataclass

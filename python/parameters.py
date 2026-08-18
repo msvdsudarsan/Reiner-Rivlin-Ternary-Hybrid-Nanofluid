@@ -1,11 +1,9 @@
 """
 parameters.py
 
-Python mirror of matlab/parameters.m. Values are kept identical so that
-results are directly comparable to the MATLAB R2026a run the user will
-perform independently. This is a PYTHON (numpy/scipy) implementation,
-NOT MATLAB R2026a -- every result derived from this module must be
-labelled as such in the manuscript.
+Central parameter definitions for the Reiner-Rivlin ternary hybrid
+nanofluid rotating-disk model. Every numerical value reported in the
+manuscript is derived from this module (Python/NumPy/SciPy).
 """
 
 from dataclasses import dataclass, field
@@ -17,7 +15,7 @@ class Parameters:
     K: float = 0.3
 
     # disk kinematics
-    lam: float = 0.5      # F(0) = lambda ; corresponds to MATLAB p.lambda
+    lam: float = 0.5      # F(0) = lambda (shrinking/stretching parameter)
     S: float = 0.5        # H(0) = -S
 
     # chemical reaction

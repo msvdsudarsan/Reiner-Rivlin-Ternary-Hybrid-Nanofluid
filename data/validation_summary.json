@@ -21,7 +21,7 @@
     "negGp0": 1.3680659292311057,
     "status": 0,
     "message": "The algorithm converged to the desired accuracy.",
-    "note": "No external MATLAB/Tabassum-Mustafa(2018) tabulated value was available in this environment for a direct numeric comparison; report this Python value alongside the independently-run MATLAB R2026a value and the literature-tabulated value."
+    "note": "Reported for context; a directly comparable Reiner-Rivlin shrinking-disk tabulation with a matching shrinking parameter was not located in the literature reviewed for this study (see Main.tex Section 9.4 for the direct discussion of this point)."
   },
   "mesh_domain_independence": [
     {

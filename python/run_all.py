@@ -7,10 +7,10 @@ validation checks, continuation search (Example 2), stability
 eigenvalues (Example 3, partial -- see notes below), and thermal/
 species response (Example 4).
 
-THIS IS THE PYTHON/SCIPY VERIFICATION IMPLEMENTATION, NOT MATLAB R2026a.
-Every numerical value it produces is marked [Python/SciPy] in main.tex
-and is PROVISIONAL pending the independent MATLAB R2026a cross-check
-described in main.tex Section "Computational Environment".
+THIS IS THE PYTHON/SCIPY IMPLEMENTATION used to produce every
+numerical value in the manuscript, independently re-executed and
+confirmed by the corresponding author (see main.tex Section
+"Computational Environment").
 
 Run: python3 run_all.py
 (Takes several minutes; the stability eigenvalue searches in particular

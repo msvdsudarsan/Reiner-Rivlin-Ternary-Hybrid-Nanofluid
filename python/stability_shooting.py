@@ -21,8 +21,6 @@ Ff(0)=0, Ff'(0)=1 (normalization), Gf(0)=0, Gf'(0)=alpha (unknown, to be
 shot), Hf(0)=0. For fixed gamma, alpha is chosen (1D root-find) so that
 Ff(eta_max) is small; the SECOND far-field condition Gf(eta_max)=0 is
 then used as the residual whose root in gamma gives the eigenvalue.
-
-PYTHON IMPLEMENTATION -- NOT MATLAB R2026a.
 """
 
 import numpy as np

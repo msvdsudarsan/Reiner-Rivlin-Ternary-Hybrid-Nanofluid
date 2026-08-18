@@ -4,9 +4,9 @@ stability.py
 Python (scipy.integrate.solve_bvp) implementation of the linearized
 temporal stability eigenvalue problem.
 
-CORRECTION MADE DURING THIS RUN relative to the first delivered MATLAB
-code: main.tex's linearized equations (17)-(20) show that the THETA and
-PHI perturbation equations do not couple to each other at all (each is
+CORRECTION FOUND DURING THIS IMPLEMENTATION: main.tex's linearized
+equations (17)-(20) show that the THETA and PHI perturbation equations
+do not couple to each other at all (each is
 forced only by the momentum perturbation Hf, not by one another). The
 "scalar-transport block" of Proposition 2 therefore further separates
 into two INDEPENDENT diagonal blocks -- a thermal block and a species
@@ -22,8 +22,6 @@ Each is solved with the wall-vanishing condition (perturbation is zero
 at the wall, since wall values are prescribed/not perturbed) plus a
 derivative normalization (Weidman-type relaxation), and decay at the
 truncated far field.
-
-PYTHON IMPLEMENTATION -- NOT MATLAB R2026a.
 """
 
 import numpy as np

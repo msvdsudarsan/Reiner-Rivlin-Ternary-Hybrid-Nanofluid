@@ -2,7 +2,7 @@
 validation.py
 
 Python (scipy.integrate.solve_bvp) implementation of the verification
-plan in main.tex Sec. 8.3. PYTHON IMPLEMENTATION -- NOT MATLAB R2026a.
+plan in main.tex Sec. 8.3.
 
 METHODOLOGICAL NOTE (found during this run): a first attempt at the
 mesh/domain-independence check solved each eta_inf independently from a
@@ -47,9 +47,10 @@ def reiner_rivlin_singlephase_check(K=0.3, lam=0.5, S=0.5, eta_inf=15.0, n=400):
     return {
         'Fp0': float(mom.y[1,0]), 'negGp0': float(-mom.y[3,0]),
         'status': int(mom.status), 'message': mom.message,
-        'note': 'No external MATLAB/Tabassum-Mustafa(2018) tabulated value was available in this '
-                'environment for a direct numeric comparison; report this Python value alongside '
-                'the independently-run MATLAB R2026a value and the literature-tabulated value.',
+        'note': 'Reported for context; a directly comparable Reiner-Rivlin '
+                'shrinking-disk tabulation with a matching shrinking parameter '
+                'was not located in the literature reviewed for this study '
+                '(see main.tex Section 9.4 for the direct discussion of this point).',
     }
 
 

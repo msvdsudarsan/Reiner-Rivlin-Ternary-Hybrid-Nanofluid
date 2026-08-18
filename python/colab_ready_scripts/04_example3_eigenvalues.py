@@ -5,11 +5,11 @@ import time
 
 # Example 3: stability eigenvalues at the Example 1 baseline (K=0.3,
 # lambda=0.5, S=0.5). Only the momentum and thermal eigenvalues are
-# attempted here -- the paper is explicit that the species-block
-# eigenvalue and the near-boundary momentum-eigenvalue trend could NOT
-# be reliably obtained in either Python or an external solver (genuinely hard,
-# not just unfinished -- see Main.tex Sections "Results and
-# Discussion" and "Limitations"). Takes about 30-40 seconds in Colab.
+# attempted here -- the paper reports that the momentum-eigenvalue
+# trend near the regularity boundary could not be reliably obtained by
+# direct shooting search (genuinely hard, not just unfinished -- see
+# Main.tex Sections "Results and Discussion" and "Limitations").
+# Takes about 30-40 seconds in Colab.
 
 K, lam, S, beta = 0.3, 0.5, 0.5, 0.2
 phi1 = phi2 = phi3 = 0.01
@@ -125,5 +125,5 @@ print(f"Paper:  momentum eigenvalue gamma_1^(M) ~ 0.712     thermal eigenvalue g
 print(f"Yours:  momentum eigenvalue gamma_1^(M) = {gamma_M:.4f}     thermal eigenvalue gamma_1^(T) = {gamma_T:.4f}")
 print()
 print("Both positive => the baseline state is linearly STABLE, matching the paper.")
-print("(The species-block eigenvalue is not attempted here -- the paper reports it as")
-print("genuinely unresolved in both Python and an external solver due to severe ill-conditioning.)")
+print("(The species-block eigenvalue is resolved analytically in the paper, not by")
+print("shooting search -- see script 08 and Remark on the species stability threshold.)")

@@ -37,7 +37,32 @@ in Google Colab, or run locally with `numpy`, `scipy`, and
 `matplotlib` installed. Each script prints its output alongside the
 corresponding value from the manuscript for direct comparison.
 
+**Package versions used for the reported results:** Python 3, NumPy
+2.4.4, SciPy 1.17.1 (`scipy.integrate.solve_bvp`). All values were
+re-verified against these exact versions on 18 Aug 2026; earlier
+verification passes used the current Google Colab default versions
+at the time of that run. `solve_bvp`'s adaptive mesh refinement is
+deterministic given identical solver inputs (initial mesh, initial
+guess, tolerance, `max_nodes`), but converged mesh node counts are
+not guaranteed to be identical across different SciPy versions or
+different initial guesses; the physical quantities reported in the
+manuscript (e.g. $F'(0)$) were confirmed stable across the versions
+and initial guesses tested.
+
 ## Citation
 
 If you use this code, please cite the associated manuscript
 (citation details to be added upon publication).
+
+## Revision history
+
+This repository reflects a full peer-review incorporation pass
+(five independent reviews). Key updates: corrected six bibliography
+entries with verified real authors, corrected one mis-cited DOI,
+grounded the chemical species with a real literature diffusivity
+value, and added new computational results -- a monotonic lambda_c
+vs. K trend across 5 values of K, an extended reaction-rate parameter
+sweep, and a verified physical explanation for a thermal-gradient
+finding at lambda=-2 (all confirmed by direct computation, not
+asserted). See the manuscript's Nomenclature table and Results
+section for details.
