@@ -1,5 +1,9 @@
 # Reiner-Rivlin Ternary Hybrid Nanofluid — Computational Reproducibility Repository
 
+> **Note:** The exact code archived at the time of manuscript submission is release **v1.0.0** 
+> (see Releases tab, or Zenodo DOI: https://doi.org/10.5281/zenodo.22009268). 
+> The `main` branch may contain later updates made after submission.
+
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22009268.svg)](https://doi.org/10.5281/zenodo.22009268)
 
 Python code, data, and figures supporting the manuscript "Structural
