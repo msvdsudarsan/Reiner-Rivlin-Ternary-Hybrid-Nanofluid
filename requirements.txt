@@ -1,0 +1,10 @@
+# Tested and verified with these exact versions (18 Aug 2026):
+numpy==2.4.4
+scipy==1.17.1
+matplotlib>=3.8
+sympy>=1.13
+
+# Earlier verification passes in this project's development used the
+# Google Colab default versions current at the time of that run; the
+# reported numerical results were confirmed stable across the
+# versions tested (see README.md, "Package versions used").
