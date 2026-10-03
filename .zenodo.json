@@ -1,1 +1,49 @@
-
+{
+  "title": "Code and data for: The second normal-stress coefficient sets the regularity boundary of the Reiner-Rivlin rotating-disk similarity reduction",
+  "upload_type": "software",
+  "version": "2.2.0",
+  "description": "<p>Python code, numerical data and figures that reproduce every numerical result in the manuscript <em>The second normal-stress coefficient sets the regularity boundary of the Reiner-Rivlin rotating-disk similarity reduction</em>, submitted to the Journal of Non-Newtonian Fluid Mechanics.</p><p>The archive covers: the identification of the Reiner-Rivlin cross-viscosity with the second normal-stress coefficient; the negative-K regularity boundary and its closed form lambda_c = 1/(2K), checked over eleven (K, S) cases; the Weissenberg-number collapse 2 Wi2 |lambda_c| = 1; the symbolic comparison with the second-order fluid; the temporal stability analysis by direct generalised eigensolve, with independent time-integration checks and mode tracking; the map of the stability threshold against the regularity boundary over ten values of K; the species-block spectrum; and the inviscid Gregory-Stuart-Walker crossflow diagnostic; and the conditioning and coefficient-level singularity diagnostic near the regularity boundary.</p><p>The README lists the scripts and the values each one reproduces. REFERENCE_VERIFICATION.md records how each citation was checked, and DEVELOPMENT_HISTORY.md records how the analysis evolved, including the numerical errors found and corrected along the way.</p>",
+  "creators": [
+    {
+      "name": "Madhyannapu, Sri Venkata Durga Sudarsan",
+      "affiliation": "Dr. RVR NRI Institute of Technology (Deemed to be University)",
+      "orcid": "0009-0001-2126-6428"
+    },
+    {
+      "name": "Subbarao, Kankipati",
+      "affiliation": "Dr. RVR NRI Institute of Technology (Deemed to be University)",
+      "orcid": "0009-0000-3953-2950"
+    },
+    {
+      "name": "Arunagiri, G.",
+      "affiliation": "Sri Indu Institute of Engineering and Technology",
+      "orcid": "0009-0002-3657-8819"
+    },
+    {
+      "name": "Cintaginjala, Pavan Kumar",
+      "affiliation": "Vignan Institute of Technology and Science (Autonomous)",
+      "orcid": "0000-0003-0978-2240"
+    },
+    {
+      "name": "Kiran Kumar, A.",
+      "affiliation": "S R K R Engineering College",
+      "orcid": "0009-0003-2097-7249"
+    },
+    {
+      "name": "Krishna Thippisetti, D. R.",
+      "affiliation": "Sri Vasavi Engineering College (Autonomous)",
+      "orcid": "0009-0006-8214-9408"
+    }
+  ],
+  "keywords": [
+    "Reiner-Rivlin fluid",
+    "second normal-stress coefficient",
+    "regularity boundary",
+    "rotating disk",
+    "linear stability",
+    "crossflow instability",
+    "similarity solution"
+  ],
+  "license": "MIT",
+  "language": "eng"
+}
