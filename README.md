@@ -1,6 +1,6 @@
 # Reiner-Rivlin rotating-disk flow — computational reproducibility archive
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22009268.svg)](https://doi.org/10.5281/zenodo.22009268)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23127470.svg)](https://doi.org/10.5281/zenodo.23127470)
 
 Python code, data and figures supporting the manuscript (release 2.2.0)
 
