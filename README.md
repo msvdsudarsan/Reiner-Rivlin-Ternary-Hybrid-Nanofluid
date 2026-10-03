@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22009268.svg)](https://doi.org/10.5281/zenodo.22009268)
 
-Python code, data and figures supporting the manuscript (release 2.2.0, matching revision V38)
+Python code, data and figures supporting the manuscript (release 2.2.0)
 
 > **The second normal-stress coefficient sets the regularity boundary of the
 > Reiner-Rivlin rotating-disk similarity reduction**

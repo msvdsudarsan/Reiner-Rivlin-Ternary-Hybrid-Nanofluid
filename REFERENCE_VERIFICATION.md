@@ -6,11 +6,11 @@ how each entry was checked, so that a reader can see which citations rest on a
 direct check against the publisher's record and which do not. It is kept as a
 transparency record, not because the journal requires it.
 
-## Checked in the 3 October 2026 pass (revision V38)
+## Checked in the 3 October 2026 pass
 
 | Entry | What was checked and changed |
 |---|---|
-| Sadiya & Sucharitha (2025), Discover Nano 20:168 | Publisher page (Springer) and PMC record. **Corrected:** the first author is A. B. Sadiya, as the publisher's own citation line and the PMC record give. Revision V37 had printed "Sadiya" alone on the strength of an earlier, incomplete check, and the previous version of this log recorded that as a correction; both were wrong. Volume 20, article 168 and the DOI were confirmed. |
+| Sadiya & Sucharitha (2025), Discover Nano 20:168 | Publisher page (Springer) and PMC record. **Corrected:** the first author is A. B. Sadiya, as the publisher's own citation line and the PMC record give. An earlier version of the bibliography printed "Sadiya" alone, and an earlier version of this log wrongly recorded that as the correct form. Volume 20, article 168 and the DOI were confirmed. |
 | Mitschka & Ulbrecht (1965), Collect. Czech. Chem. Commun. 30:2511-2526 | Journal digital archive (CCCC) gives the full title, including "Ostwald-de-Waeleschen Typs in der Umgebung rotierender Drehkegel und Scheiben", issue 8, and DOI 10.1135/cccc19652511. The title, issue and DOI are now complete, and the BibTeX key reads Mitschka1965. |
 | Rogers & Lance (1960), J. Fluid Mech. 7:617-631 | Year was already printed as 1960; the BibTeX key was still Rogers1961 and is now Rogers1960. DOI added. |
 | Griffiths, Stephen, Bassom & Garrett (2014), JNNFM 207:1-6 | DOI 10.1016/j.jnnfm.2014.02.004 confirmed against two institutional repository records. |
@@ -28,7 +28,7 @@ each resolved again by the authors in this pass; every DOI in the file should be
 opened once before the final upload. The informal note attached to the
 Turkyilmazoglu (2012) entry was removed from the bibliography.
 
-## Checked against the publisher record in the October 2026 pass (revision V37)
+## Checked against the publisher record in the earlier October 2026 pass
 
 Karami & Stephanou (2026); Salas-Barzola et al. (2026); Evans, Palhares &
 Afonso (2026); Jiang, Papageorgiou & Ding (2026); Winters et al. (2026);
@@ -70,8 +70,8 @@ is created, the DOI should be confirmed to resolve to the intended record.
 
 | Status | Entries |
 |---|---|
-| Checked in the 3 October 2026 pass (V38), in the table above | 5 |
-| Checked in the October 2026 pass (V37) | 11 |
+| Checked in the 3 October 2026 pass, in the table above | 5 |
+| Checked in the earlier October 2026 pass | 11 |
 | Checked in the 18 August 2026 pass | 9 |
 | Checked in an earlier review round | 3 |
 | Not individually re-checked field by field | 14 |

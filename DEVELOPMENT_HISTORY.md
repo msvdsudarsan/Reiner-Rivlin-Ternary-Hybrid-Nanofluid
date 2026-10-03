@@ -535,7 +535,7 @@ as a final pre-submission step, exactly as several of the peer-review
 reports already suggested.
 
 
-## Version 2.1.0 (manuscript revision V37)
+## Version 2.1.0
 
 - The conditioning statement was narrowed. The bordered Newton Jacobian replaces the
   wall equation by F(0) = lambda, so it cannot certify the singular coefficient; the
@@ -551,7 +551,7 @@ reports already suggested.
 - README opening and sign statement made neutral and exact.
 
 
-## Version 2.2.0 (manuscript revision V38)
+## Version 2.2.0
 
 - Bibliography corrected and completed: first author of the Discover Nano paper is A. B. Sadiya;
   the Mitschka & Ulbrecht title, issue and DOI are now exact; the Rogers & Lance key matches the
