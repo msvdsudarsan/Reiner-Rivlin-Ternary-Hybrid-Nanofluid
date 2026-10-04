@@ -1,3 +1,4 @@
+import os
 import sympy as sp, pickle
 
 r = sp.symbols('r', positive=True)
@@ -6,7 +7,7 @@ eta = sp.symbols('eta', real=True)
 zeta = sp.sqrt(Omega/nu)
 muc = K*mu/Omega   # dimensionless cross-viscosity parameter K = mu_c*Omega/mu
 
-with open('/home/claude/A1_E.pkl','rb') as f:
+with open(os.path.join(os.path.dirname(os.path.abspath(__file__)),'A1_E.pkl'),'rb') as f:
     d = pickle.load(f)
 u, v, w = d['u'], d['v'], d['w']
 

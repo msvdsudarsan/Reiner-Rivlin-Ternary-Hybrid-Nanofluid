@@ -1,3 +1,4 @@
+import os
 import sympy as sp
 
 r = sp.symbols('r', positive=True)
@@ -46,6 +47,6 @@ for i,ii in enumerate(['r','th','z']):
         if j>=i:
             print(f"A1sq_{ii}{jj} =", sp.simplify(A1sq[i,j]))
 
-with open('/home/claude/A1_E.pkl','wb') as f:
+with open(os.path.join(os.path.dirname(os.path.abspath(__file__)),'A1_E.pkl'),'wb') as f:
     import pickle
     pickle.dump({'E':E,'A1':A1,'A1sq':A1sq,'u':u,'v':v,'w':w}, f)

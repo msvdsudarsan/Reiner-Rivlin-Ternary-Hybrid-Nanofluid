@@ -1,3 +1,4 @@
+import os
 import sympy as sp, pickle
 
 r = sp.symbols('r', positive=True)
@@ -5,7 +6,7 @@ Omega, nu, mu, muc, rho = sp.symbols('Omega nu mu mu_c rho', positive=True)
 eta = sp.symbols('eta', real=True)
 zeta = sp.sqrt(Omega/nu)
 
-with open('/home/claude/A1_E.pkl','rb') as f:
+with open(os.path.join(os.path.dirname(os.path.abspath(__file__)),'A1_E.pkl'),'rb') as f:
     d = pickle.load(f)
 u, v, w = d['u'], d['v'], d['w']
 A1sq = d['A1sq']
