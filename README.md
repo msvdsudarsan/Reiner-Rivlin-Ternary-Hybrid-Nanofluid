@@ -49,8 +49,10 @@ collected under "JNNFM version" further down.
 - `data/` — CSV/JSON numerical output underlying the manuscript's
   tables and figures, including `broad_search_KS.csv`
   (the 14-point (K,S) regularity-boundary search, Table "broad-search"),
-  `momentum_eigenvalue_trend.csv` (the corrected gamma_1^(M)(lambda)
-  trend, Figure "eigen-trend", flagged by resolution status),
+  `momentum_eigenvalue_trend.csv` (a historical positive-only eigenvalue
+  diagnostic, retained to document the one-sided scan over gamma >= 0; it lists
+  the smallest positive eigenvalues, not the smallest eigenvalues, and the
+  stability results use `lamstar_map.csv` and the other files described below),
   `eigenvalue_baseline_convergence.csv` (the Chebyshev convergence
   table underlying gamma_1^(M)=0.41857), `species_chebyshev_spurious_modes.csv`
   (the resolution-dependent species-block spurious eigenvalues),
@@ -154,7 +156,8 @@ the original study. The Chebyshev eigenvalue routine reproduces the published
 ## Honest numerical notes
 
 * Near-boundary momentum eigenvalues are ill-conditioned.
-  `data/momentum_eigenvalue_negK.csv` reports values only where three
+  `data/momentum_eigenvalue_negK.csv` is likewise a historical positive-only
+  diagnostic, kept to show why a scan restricted to gamma >= 0 is misleading. It reports values only where three
   resolutions agree, and marks the final point (`lambda = -1.62`, ~9% spread)
   as marginally resolved with its value left blank rather than recording a
   number the data do not support.
