@@ -1,0 +1,42 @@
+=== Part 1: Systematic (K,S) grid search (this is the slow part -- ~25-35 min) ===
+Paper Table (broad-search): 14 combinations, all with gap <= 0.0014
+(This has been independently confirmed to match exactly by the corresponding
+ author's own Colab run -- if your numbers differ noticeably, check your
+ solve_bvp/scipy version, not the paper's reported values.)
+K=0.05 S=0.5  lambda_c= -14.06  maxF=9.9999  1/(2K)=10.0000  gap=0.0001
+K=0.05 S=1.0  lambda_c= -15.54  maxF=9.9999  1/(2K)=10.0000  gap=0.0001
+K=0.05 S=1.5  lambda_c= -17.01  maxF=9.9999  1/(2K)=10.0000  gap=0.0001
+K=0.05 S=2.0  lambda_c= -18.48  maxF=9.9999  1/(2K)=10.0000  gap=0.0001
+K=0.05 S=2.5  lambda_c= -19.94  maxF=10.0000  1/(2K)=10.0000  gap=0.0000
+K=0.10 S=0.5  lambda_c=  -8.40  maxF=5.0000  1/(2K)=5.0000  gap=0.0000
+K=0.10 S=1.0  lambda_c=  -9.35  maxF=5.0000  1/(2K)=5.0000  gap=0.0000
+K=0.10 S=1.5  lambda_c= -10.32  maxF=5.0000  1/(2K)=5.0000  gap=0.0000
+K=0.10 S=2.0  lambda_c= -11.29  maxF=5.0000  1/(2K)=5.0000  gap=0.0000
+K=0.10 S=2.5  lambda_c= -12.27  maxF=5.0000  1/(2K)=5.0000  gap=0.0000
+K=0.20 S=0.5  lambda_c=  -5.22  maxF=2.5000  1/(2K)=2.5000  gap=0.0000
+K=0.20 S=1.0  lambda_c=  -5.85  maxF=2.5000  1/(2K)=2.5000  gap=0.0000
+K=0.20 S=1.5  lambda_c=  -6.49  maxF=2.5000  1/(2K)=2.5000  gap=0.0000
+K=0.20 S=2.0  lambda_c=  -7.14  maxF=2.5000  1/(2K)=2.5000  gap=0.0000
+Part 1 done in 1036s
+
+=== Part 2: Species-block analytical stability threshold (corrected) ===
+Paper (corrected): gamma_threshold = +Sc_thnf*beta = +176.6238
+Yours: gamma_threshold = 176.6238
+
+NOTE: an earlier revision of this script and the manuscript both
+had the wrong sign here (gamma_thr = -Sc_thnf*beta). An independent
+symbolic re-derivation (symbolic_derivation/derive_species_sign_check.py)
+found the correct linearized species perturbation equation has the
+reaction term entering as -Sc*beta*Phi, not +Sc*beta*Phi, which flips
+the far-field threshold to +Sc_thnf*beta. Both the corrected shooting
+search and a corrected Chebyshev spectral search (script 10) still find
+no resolution-stable discrete eigenvalue on either side of this
+corrected threshold across gamma in [-50, 400] -- see Remark on the
+species-block threshold in the manuscript for the full, honest account
+of what this corrected threshold does and does not explain.
+  gamma= -200.00  product of roots (gamma-Sc*beta)=  -376.62  opposite-sign roots (product<0)
+  gamma=    0.00  product of roots (gamma-Sc*beta)=  -176.62  opposite-sign roots (product<0)
+  gamma=  150.00  product of roots (gamma-Sc*beta)=   -26.62  opposite-sign roots (product<0)
+  gamma=  176.62  product of roots (gamma-Sc*beta)=    -0.00  opposite-sign roots (product<0)
+  gamma=  200.00  product of roots (gamma-Sc*beta)=    23.38  both decay (product>0)
+  gamma=  400.00  product of roots (gamma-Sc*beta)=   223.38  both decay (product>0)

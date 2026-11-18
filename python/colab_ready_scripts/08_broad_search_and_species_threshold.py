@@ -2,7 +2,7 @@ import numpy as np
 from scipy.integrate import solve_bvp, solve_ivp
 import time
 
-# Reproduces two major new results added during the second peer-review
+# Reproduces two major new results added in the extended analysis
 # incorporation round: (1) the systematic 14-point (K,S) search showing
 # every combination terminates at the regularity boundary once
 # adequately resolved, and (2) the analytical resolution of the

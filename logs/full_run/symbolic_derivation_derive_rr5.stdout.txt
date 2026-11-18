@@ -1,0 +1,7 @@
+continuity residual (want it in form const*(2F+H')): Omega*(2*F(eta) + Derivative(H(eta), eta))
+
+=== r-momentum / (r*rho*Omega^2) = 0  ===
+-2*K*mu*F(eta)*Derivative(F(eta), (eta, 2))/(nu*rho) - 5*K*mu*Derivative(F(eta), eta)**2/(nu*rho) - 2*K*mu*Derivative(F(eta), eta)*Derivative(H(eta), (eta, 2))/(nu*rho) - 2*K*mu*Derivative(F(eta), (eta, 2))*Derivative(H(eta), eta)/(nu*rho) + K*mu*Derivative(G(eta), eta)**2/(nu*rho) - mu*Derivative(F(eta), (eta, 2))/(nu*rho) + F(eta)**2 - G(eta)**2 + H(eta)*Derivative(F(eta), eta)
+
+=== theta-momentum / (r*rho*Omega^2) = 0 ===
+-2*K*mu*F(eta)*Derivative(G(eta), (eta, 2))/(nu*rho) - 6*K*mu*Derivative(F(eta), eta)*Derivative(G(eta), eta)/(nu*rho) - 2*K*mu*Derivative(G(eta), eta)*Derivative(H(eta), (eta, 2))/(nu*rho) - 2*K*mu*Derivative(G(eta), (eta, 2))*Derivative(H(eta), eta)/(nu*rho) - mu*Derivative(G(eta), (eta, 2))/(nu*rho) + 2*F(eta)*G(eta) + H(eta)*Derivative(G(eta), eta)

@@ -1,0 +1,18 @@
+Solving baseline momentum (robust two-stage)...
+  baseline F'(0) = -0.442969 (should match -0.442969)
+Searching for the momentum stability eigenvalue (shooting method)...
+  momentum eigenvalue found in 63.5s
+Searching for the thermal stability eigenvalue...
+
+=== COMPARE AGAINST Main.tex Example 3 ===
+Paper (authoritative, Chebyshev collocation, script 14):  gamma_1^(M) = 0.41857     gamma_1^(T) = 10.9623
+This script (illustrative shooting cross-check):          gamma_1^(M) = 0.7095     gamma_1^(T) = 10.9623
+
+If gamma_1^(M) above is not close to 0.41857, this shooting search has
+most likely locked onto one of the closely-spaced higher modes (~0.47-0.55)
+rather than the true smallest eigenvalue -- see the note above pert_rhs and
+script 14_momentum_eigenvalue_chebyshev.py for the reliable calculation.
+
+Both eigenvalues are positive => the baseline state is linearly STABLE, matching the paper.
+(The species-block eigenvalue is resolved analytically in the paper, not by
+shooting search -- see script 08 and Remark on the species stability threshold.)

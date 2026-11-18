@@ -127,14 +127,9 @@ def gamma_residual(gamma, base_interp, eta_max):
     if a is None: return None
     return far_field(gamma, a, base_interp, eta_max)[1]
 
-gammas_scan = np.linspace(-2, 2, 13)
-resids = [gamma_residual(g, mom.sol, 8.0) for g in gammas_scan]
-gamma_M = None
-for i in range(len(gammas_scan)-1):
-    if resids[i] is not None and resids[i+1] is not None and np.sign(resids[i]) != np.sign(resids[i+1]):
-        gamma_M = brentq(lambda g: gamma_residual(g, mom.sol, 8.0) or 1e8, gammas_scan[i], gammas_scan[i+1], xtol=1e-6)
-        break
-print(f"      done ({time.time()-t0:.1f}s), gamma_1^(M) = {gamma_M:.4f}")
+# The momentum eigenvalue figure (eigenvalue_spectrum) is produced by
+# ../rr_constitutive/make_eigenvalue_spectrum_figure.py (direct eigensolve).
+print(f"      done ({time.time()-t0:.1f}s)")
 
 print("[4/4] Drawing and saving figures at 500 DPI...")
 outdir = "paper_figures"
@@ -193,16 +188,7 @@ ax.set_title('Approach to the regularity boundary')
 ax.legend(); ax.grid(alpha=0.3)
 save(fig, "regularity_boundary.png")
 
-fig, ax = plt.subplots(figsize=(6.5,4.5))
-ax.plot(gammas_scan, resids, 'o-')
-ax.axhline(0, color='k', lw=0.7)
-if gamma_M is not None:
-    ax.axvline(gamma_M, color='red', ls='--', lw=1, label=fr'root $\gamma_1\approx${gamma_M:.3f}')
-ax.set_xlabel(r'$\gamma$ (trial eigenvalue)'); ax.set_ylabel('shooting residual')
-ax.set_yscale('symlog')
-ax.set_title('Momentum eigenvalue shooting residual, baseline case')
-ax.legend(); ax.grid(alpha=0.3)
-save(fig, "eigenvalue_spectrum.png")
+
 
 print(f"      saved {len(saved)} figures to ./{outdir}/ at {DPI} DPI")
 

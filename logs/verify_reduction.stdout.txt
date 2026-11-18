@@ -1,0 +1,6 @@
+F'' = (K*Derivative(F0(eta), eta)**2 - K*Derivative(G0(eta), eta)**2 - F0(eta)**2 + G0(eta)**2 - H0(eta)*Derivative(F0(eta), eta))/(2*K*F0(eta) - 1)
+G'' = (2*K*Derivative(F0(eta), eta)*Derivative(G0(eta), eta) - 2*F0(eta)*G0(eta) - H0(eta)*Derivative(G0(eta), eta))/(2*K*F0(eta) - 1)
+
+Simultaneous solve:
+F'' = (K*Derivative(F0(eta), eta)**2 - K*Derivative(G0(eta), eta)**2 - F0(eta)**2 + G0(eta)**2 - H0(eta)*Derivative(F0(eta), eta))/(2*K*F0(eta) - 1)
+G'' = (2*K*Derivative(F0(eta), eta)*Derivative(G0(eta), eta) - 2*F0(eta)*G0(eta) - H0(eta)*Derivative(G0(eta), eta))/(2*K*F0(eta) - 1)

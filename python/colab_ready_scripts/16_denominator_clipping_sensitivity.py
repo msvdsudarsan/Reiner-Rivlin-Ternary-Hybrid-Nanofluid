@@ -3,7 +3,7 @@ from scipy.integrate import solve_bvp
 import sys
 
 K, S = 0.3, 1.5
-tol_clip = float(sys.argv[1])
+tol_clip = float(sys.argv[1]) if len(sys.argv) > 1 else 1e-8   # run with 1e-6, 1e-8, 1e-10 to compare
 
 def mom_rhs_clipped(eta, y, Kv, tol):
     F, Fp, G, Gp, H = y

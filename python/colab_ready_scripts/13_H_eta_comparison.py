@@ -90,7 +90,7 @@ fig.tight_layout()
 fig.savefig("H_comparison.png", dpi=500)
 print("Saved H_comparison.png")
 
-# Actual console output (this sandbox, SciPy 1.14, verified before packaging):
+# Actual console output (SciPy 1.14, verified before packaging):
 # lambda=  0.5  H(0)=-1.5000  max H=-1.5000 at eta=0.000  zero-crossings near eta=[]
 # lambda= -1.0  H(0)=-1.5000  max H=-0.4507 at eta=1.655  zero-crossings near eta=[]
 # lambda= -2.0  H(0)=-1.5000  max H= 0.7511 at eta=1.378  zero-crossings near eta=[0.503 3.031]

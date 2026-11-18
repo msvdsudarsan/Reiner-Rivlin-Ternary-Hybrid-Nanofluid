@@ -1,0 +1,4 @@
+radial/r  : -2*K*F(z)*Derivative(F(z), (z, 2)) + K*Derivative(F(z), z)**2 - K*Derivative(G(z), z)**2 - F(z)**2 + G(z)**2 - H(z)*Derivative(F(z), z) + Derivative(F(z), (z, 2))
+azimuth/r : -2*K*F(z)*Derivative(G(z), (z, 2)) + 2*K*Derivative(F(z), z)*Derivative(G(z), z) - 2*F(z)*G(z) - H(z)*Derivative(G(z), z) + Derivative(G(z), (z, 2))
+z-comp    : 2*K*r**2*Derivative(F(z), z)*Derivative(F(z), (z, 2)) + 2*K*r**2*Derivative(G(z), z)*Derivative(G(z), (z, 2)) + 28*K*F(z)*Derivative(F(z), z) + 2*F(z)*H(z) - 2*Derivative(F(z), z)
+radial/r minus dp/dr/r (ours): -2*K*F(z)*Derivative(F(z), (z, 2)) - K*Derivative(F(z), z)**2 - 3*K*Derivative(G(z), z)**2 - F(z)**2 + G(z)**2 - H(z)*Derivative(F(z), z) + Derivative(F(z), (z, 2))

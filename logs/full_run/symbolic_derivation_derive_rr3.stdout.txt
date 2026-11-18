@@ -1,0 +1,14 @@
+e_rr   = Omega*F(eta)
+e_thth = Omega*F(eta)
+e_zz   = Omega*Derivative(H(eta), eta)
+e_rz   = Omega**(3/2)*r*Derivative(F(eta), eta)/(2*sqrt(nu))
+e_rth  = 0   (should be 0)
+e_thz  = Omega**(3/2)*r*Derivative(G(eta), eta)/(2*sqrt(nu))
+
+A1^2 components:
+A1sq_rr = Omega**2*(Omega*r**2*Derivative(F(eta), eta)**2 + 4*nu*F(eta)**2)/nu
+A1sq_rth = Omega**3*r**2*Derivative(F(eta), eta)*Derivative(G(eta), eta)/nu
+A1sq_rz = 2*Omega**(5/2)*r*(F(eta) + Derivative(H(eta), eta))*Derivative(F(eta), eta)/sqrt(nu)
+A1sq_thth = Omega**2*(Omega*r**2*Derivative(G(eta), eta)**2 + 4*nu*F(eta)**2)/nu
+A1sq_thz = 2*Omega**(5/2)*r*(F(eta) + Derivative(H(eta), eta))*Derivative(G(eta), eta)/sqrt(nu)
+A1sq_zz = Omega**2*(Omega*r**2*Derivative(F(eta), eta)**2 + Omega*r**2*Derivative(G(eta), eta)**2 + 4*nu*Derivative(H(eta), eta)**2)/nu

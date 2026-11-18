@@ -2,9 +2,9 @@
 09b_puspanathan_kcontinuation.py
 
 Follow-up to 09_puspanathan_direct_comparison.py, added during development
-revision pass in direct response to a peer-review suggestion: rather
+additional check: rather
 than reaching the Puspanathan et al. (2024) operating point
-(K=1.5, S=2.8, lambda=-2.4) only by continuation in lambda at fixed
+(K=1.5, S=5.6, lambda=-2.4) only by continuation in lambda at fixed
 K=1.5 (script 09), this script reaches the SAME point by continuation
 in K at fixed lambda=-2.4, starting from the validated K=0.3 baseline
 and stepping K up in small increments (warm-started at every step
@@ -39,7 +39,7 @@ def mom_guess(eta, lamv, Sv):
     return np.vstack([lamv * d, -lamv * d, d, -d, -Sv + lamv * (1 - d)])
 
 
-S = 2.8
+S = 5.6
 target_lambda = -2.4
 K_target = 1.5
 
@@ -89,14 +89,22 @@ while Kv < K_target and n < 2000:
 print()
 print(f"=== Final, K continued to {Kv:.4f}, S={S}, lambda={target_lambda} ===")
 print(f"F'(0) via continuation-in-K = {sol.y[1,0]:.6f}")
-print(f"F'(0) via continuation-in-lambda (script 09) = 1.718979 (reported in manuscript as 1.7190)")
+print("F'(0) via continuation-in-lambda at S=5.6 (script 09): 4.0383")
 factor = 1 - 2 * K_target * target_lambda
 print(f"Puspanathan et al. branch 1 target: {20.65572426/factor:.4f}")
 print(f"Puspanathan et al. branch 2 target: {17.08537860/factor:.4f}")
 print(f"Regularity boundary 1/(2K) = {1/(2*K_target):.6f}; max F(eta) reached = {np.max(sol.y[0]):.6f}")
 print()
-print("Interpretation: the two independently-ordered continuation paths agree to four")
-print("decimal places and neither reaches either of Puspanathan et al.'s reported branch")
-print("values. This rules out 'the present code's own continuation path landed on a")
-print("different point of the solution manifold' as the explanation; it does not adjudicate")
-print("between a genuine implementation/normalization difference and an error in either study.")
+print("Interpretation: at S = 5.6 (their vartheta = 2.8) the two continuation paths agree")
+print("with each other and reach a third solution, F'(0) = 4.0383, which is not a published")
+print("branch. The two published branches (2.5190 and 2.0836) are found by direct solution")
+print("in script 09, Part A. F'(0) = 1.7190 belongs to S = 2.8, a different operating point.")
+import csv
+with open('puspanathan_kcontinuation_check.csv', 'w', newline='') as fh:
+    w = csv.writer(fh)
+    w.writerow(['description', 'value'])
+    w.writerow(['K_target', K_target]); w.writerow(['S', S])
+    w.writerow(['lambda_target', target_lambda])
+    w.writerow(['Fprime0_via_K_continuation', f"{sol.y[1,0]:.6f}"])
+    w.writerow(['printed_branch_1_converted', f"{20.65572426/factor:.5f}"])
+    w.writerow(['printed_branch_2_converted', f"{17.08537860/factor:.5f}"])

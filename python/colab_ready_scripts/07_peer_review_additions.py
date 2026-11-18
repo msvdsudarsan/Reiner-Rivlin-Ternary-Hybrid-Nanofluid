@@ -1,7 +1,7 @@
 import numpy as np
 from scipy.integrate import solve_bvp
 
-# Reproduces four new results added to the manuscript during peer-review
+# Reproduces four new results added to the manuscript in the extended analysis
 # incorporation: (1) monotonic lambda_c vs K trend across 5 K values,
 # (2) extended beta sweep confirming near-insensitivity, (3) numerical
 # illustration of Corollary 1 (wall-shear factor), (4) the H(eta)

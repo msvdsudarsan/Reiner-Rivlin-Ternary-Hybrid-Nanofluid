@@ -1,0 +1,24 @@
+=== Base-state continuation (all should converge, status=0) ===
+  lambda=  0.0000  status=0  F'(0)=0.093096
+  lambda= -0.5000  status=0  F'(0)=0.899643
+  lambda= -1.0000  status=0  F'(0)=1.518850
+  lambda= -1.5000  status=0  F'(0)=1.914447
+  lambda= -2.0000  status=0  F'(0)=2.138281
+  lambda= -2.5000  status=0  F'(0)=2.235977
+  lambda= -3.0000  status=0  F'(0)=2.240071
+  lambda= -3.5000  status=0  F'(0)=2.174021
+  lambda= -4.0000  status=0  F'(0)=2.054742
+  lambda= -4.2000  status=0  F'(0)=1.994997
+
+=== Momentum eigenvalue at each lambda, 3-resolution cross-check ===
+  lambda=  0.50  vals=[0.991786 0.977076      nan]  spread=  1.5%  [RESOLVED]
+  lambda=  0.00  vals=[0.567363 0.567355 0.567408]  spread=  0.0%  [RESOLVED]
+  lambda= -0.50  vals=[0.230459 0.226185 0.223552]  spread=  3.0%  [RESOLVED]
+  lambda= -1.00  vals=[0.133472 0.131781 0.130749]  spread=  2.1%  [RESOLVED]
+  lambda= -1.50  vals=[0.105329 0.105328 0.105328]  spread=  0.0%  [RESOLVED]
+  lambda= -2.00  vals=[0.049254 0.049255 0.049255]  spread=  0.0%  [RESOLVED]
+  lambda= -2.50  vals=[0.220587 0.216113 0.213384]  spread=  3.3%  [RESOLVED]
+  lambda= -3.00  vals=[0.260082 0.256451 0.255032]  spread=  2.0%  [RESOLVED]
+  lambda= -3.50  vals=[0.278033 0.271951 0.30073 ]  spread= 10.1%  [NOT YET RESOLVED]
+  lambda= -4.00  vals=[0.239702 0.236344 0.347063]  spread= 40.4%  [NOT YET RESOLVED]
+  lambda= -4.20  vals=[0.209548 0.209087 0.366019]  spread= 60.0%  [NOT YET RESOLVED]

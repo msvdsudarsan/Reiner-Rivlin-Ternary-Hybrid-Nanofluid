@@ -1,3 +1,4 @@
+# NOTE: lists positive real eigenvalues only (finite domain); the stability crossings are in script 15.
 import numpy as np
 from scipy.integrate import solve_bvp
 from scipy.linalg import eig

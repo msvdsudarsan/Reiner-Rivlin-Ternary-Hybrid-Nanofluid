@@ -1,0 +1,6 @@
+e_rr = Omega*F(sqrt(Omega)*z/sqrt(nu))
+e_thth = Omega*F(sqrt(Omega)*z/sqrt(nu))
+e_zz = Omega*Subs(Derivative(H(_xi_1), _xi_1), _xi_1, sqrt(Omega)*z/sqrt(nu))
+e_rz = Omega**(3/2)*r*Subs(Derivative(F(_xi_1), _xi_1), _xi_1, sqrt(Omega)*z/sqrt(nu))/(2*sqrt(nu))
+e_rth = 0
+e_thz = Omega**(3/2)*r*Subs(Derivative(G(_xi_1), _xi_1), _xi_1, sqrt(Omega)*z/sqrt(nu))/(2*sqrt(nu))

@@ -1,0 +1,46 @@
+{
+  "input": {
+    "R": 0.025,
+    "rpm": 60.0,
+    "rho": 1000.0,
+    "eta0": 1.0,
+    "Psi2": -0.02,
+    "rel_sd_eta0": 0.05,
+    "rel_sd_Psi2": 0.15,
+    "rel_sd_rpm": 0.0,
+    "rel_sd_R": 0.0,
+    "lambda_disk": 0.0,
+    "S": 0.0,
+    "label": "synthetic illustration"
+  },
+  "Omega_rad_s": 6.283185307179585,
+  "K_nominal": -0.1256637061435917,
+  "lambda_wall": -3.9788735772973842,
+  "wall_factor_at_requested_lambda": 1.0,
+  "full_profile_denominator_min_nominal": 1.0,
+  "torque_coefficient_newtonian": 0.6159220143992313,
+  "torque_coefficient_nominal": 0.5949791324733628,
+  "torque_nominal_Nm": 0.00018182410075715785,
+  "torque_newtonian_same_eta_Nm": 0.00018822419189582458,
+  "mc_seed": 20261116,
+  "mc_draws": 50000,
+  "mc_in_grid_fraction": 1.0,
+  "mc_K_percentiles": [
+    -0.1657119077271822,
+    -0.12552935396661286,
+    -0.08762211430400525
+  ],
+  "mc_lambda_wall_percentiles": [
+    -5.706322016705366,
+    -3.9831321057753426,
+    -3.017284677679988
+  ],
+  "mc_torque_percentiles_Nm": [
+    0.00017182550576045572,
+    0.00018183292221691605,
+    0.00019131734700432367
+  ],
+  "mc_wall_screen_pass_fraction": 1.0,
+  "first_order_relative_sd_K_and_lambda_wall": 0.15811388300841897,
+  "warning": "Synthetic inputs; wall screen is not a proof of global regularity; torque MC uses sample-specific nu=eta/rho."
+}

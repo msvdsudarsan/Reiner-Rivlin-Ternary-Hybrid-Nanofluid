@@ -1,0 +1,18 @@
+Sahoo parameter mapping: L = mu_c(Sahoo)*Omega/mu = 2*K(main).
+DERIVED radial equation:
+L*(Derivative(F(z), z)**2 - Derivative(G(z), z)**2)/2 + (-L*F(z) + 1)*Derivative(F(z), (z, 2)) - F(z)**2 + G(z)**2 - H(z)*Derivative(F(z), z)
+PRINTED Sahoo Eq. (9):
+-L*(-2*F(z)*Derivative(F(z), (z, 2)) + Derivative(F(z), z)**2 - 3*Derivative(G(z), z)**2)/2 - F(z)**2 + G(z)**2 - H(z)*Derivative(F(z), z) + Derivative(F(z), (z, 2))
+DERIVED azimuthal equation:
+(-L*F(z) + 1)*Derivative(G(z), (z, 2)) + (L*Derivative(F(z), z) - H(z))*Derivative(G(z), z) - 2*F(z)*G(z)
+PRINTED Sahoo Eq. (10):
+L*(F(z)*Derivative(G(z), (z, 2)) + Derivative(F(z), z)*Derivative(G(z), z)) - 2*F(z)*G(z) - H(z)*Derivative(G(z), z) + Derivative(G(z), (z, 2))
+DERIVED full axial equation:
+L*r**2*(Derivative(F(z), z)*Derivative(F(z), (z, 2)) + Derivative(G(z), z)*Derivative(G(z), (z, 2))) + 14*L*F(z)*Derivative(F(z), z) + 2*F(z)*H(z) - 2*Derivative(F(z), z) + Derivative(P(z), z)
+PRINTED Sahoo Eq. (11), after continuity:
+-14*L*F(z)*Derivative(F(z), z) + 2*F(z)*H(z) - 2*Derivative(F(z), z) + Derivative(P(z), z)
+DERIVED wall shear factors:
+radial: -(L*F(z) - 1)*Derivative(F(z), z)
+azimuthal: -(L*F(z) - 1)*Derivative(G(z), z)
+PRINTED Sahoo slip factors: radial (1-LF), azimuthal (1-2LF).
+All three exact symbolic identities: PASS.

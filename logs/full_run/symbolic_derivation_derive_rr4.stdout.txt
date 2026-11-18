@@ -1,0 +1,18 @@
+=== inertia terms ===
+a_r  = Omega**2*r*(F(eta)**2 - G(eta)**2 + H(eta)*Derivative(F(eta), eta))
+a_th = Omega**2*r*(2*F(eta)*G(eta) + H(eta)*Derivative(G(eta), eta))
+a_z  = Omega**(3/2)*sqrt(nu)*H(eta)*Derivative(H(eta), eta)
+
+=== div S terms ===
+divS_r  = Omega**2*r*(2*Omega*mu_c*F(eta)*Derivative(F(eta), (eta, 2)) + 5*Omega*mu_c*Derivative(F(eta), eta)**2 + 2*Omega*mu_c*Derivative(F(eta), eta)*Derivative(H(eta), (eta, 2)) + 2*Omega*mu_c*Derivative(F(eta), (eta, 2))*Derivative(H(eta), eta) - Omega*mu_c*Derivative(G(eta), eta)**2 + mu*Derivative(F(eta), (eta, 2)))/nu
+divS_th = Omega**2*r*(2*Omega*mu_c*(F(eta)*Derivative(G(eta), (eta, 2)) + Derivative(F(eta), eta)*Derivative(G(eta), eta) + Derivative(G(eta), eta)*Derivative(H(eta), (eta, 2)) + Derivative(G(eta), (eta, 2))*Derivative(H(eta), eta)) + 4*Omega*mu_c*Derivative(F(eta), eta)*Derivative(G(eta), eta) + mu*Derivative(G(eta), (eta, 2)))/nu
+divS_z  = 2*Omega**(3/2)*(Omega*mu_c*(Omega*r**2*Derivative(F(eta), eta)*Derivative(F(eta), (eta, 2)) + Omega*r**2*Derivative(G(eta), eta)*Derivative(G(eta), (eta, 2)) + 4*nu*Derivative(H(eta), eta)*Derivative(H(eta), (eta, 2))) + mu*nu*Derivative(H(eta), (eta, 2)) + nu*(2*Omega*mu_c*(F(eta) + Derivative(H(eta), eta)) + mu)*Derivative(F(eta), eta))/nu**(3/2)
+
+=== rho*a_r - divS_r  (should reduce cleanly, proportional to r) ===
+Omega**2*(-2*Omega*mu_c*F(eta)*Derivative(F(eta), (eta, 2)) - 5*Omega*mu_c*Derivative(F(eta), eta)**2 - 2*Omega*mu_c*Derivative(F(eta), eta)*Derivative(H(eta), (eta, 2)) - 2*Omega*mu_c*Derivative(F(eta), (eta, 2))*Derivative(H(eta), eta) + Omega*mu_c*Derivative(G(eta), eta)**2 - mu*Derivative(F(eta), (eta, 2)) + nu*rho*(F(eta)**2 - G(eta)**2 + H(eta)*Derivative(F(eta), eta)))/nu
+
+=== rho*a_th - divS_th (should reduce cleanly, proportional to r) ===
+Omega**2*(-2*Omega*mu_c*(F(eta)*Derivative(G(eta), (eta, 2)) + Derivative(F(eta), eta)*Derivative(G(eta), eta) + Derivative(G(eta), eta)*Derivative(H(eta), (eta, 2)) + Derivative(G(eta), (eta, 2))*Derivative(H(eta), eta)) - 4*Omega*mu_c*Derivative(F(eta), eta)*Derivative(G(eta), eta) - mu*Derivative(G(eta), (eta, 2)) + nu*rho*(2*F(eta)*G(eta) + H(eta)*Derivative(G(eta), eta)))/nu
+
+=== z-momentum: rho*a_z - divS_z =  -dp/dz  (defines P(eta)) ===
+Omega**(3/2)*(-2*Omega*mu_c*(Omega*r**2*Derivative(F(eta), eta)*Derivative(F(eta), (eta, 2)) + Omega*r**2*Derivative(G(eta), eta)*Derivative(G(eta), (eta, 2)) + 4*nu*Derivative(H(eta), eta)*Derivative(H(eta), (eta, 2))) - 2*mu*nu*Derivative(H(eta), (eta, 2)) + nu**2*rho*H(eta)*Derivative(H(eta), eta) - 2*nu*(2*Omega*mu_c*(F(eta) + Derivative(H(eta), eta)) + mu)*Derivative(F(eta), eta))/nu**(3/2)

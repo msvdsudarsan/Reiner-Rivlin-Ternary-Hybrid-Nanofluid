@@ -111,14 +111,12 @@ def example3_baseline(bs, p):
     gamma_T = float(eig_T.p[0]) if eig_T.status == 0 else None
     print("  thermal eigenvalue (solve_bvp):", gamma_T)
 
-    print("  species eigenvalue: NOT obtained by direct shooting/solve_bvp search here")
-    print("  (Sc_thnf too large for either method within a practical time budget). This")
-    print("  is not simply an open item: a corrected analytical far-field threshold")
-    print("  (gamma_thr = +Sc_thnf*beta, corrected from an earlier sign error)")
-    print("  and an independent Chebyshev collocation cross-check both find no")
-    print("  resolution-stable discrete eigenvalue in the regime tested; see")
-    print("  08_broad_search_and_species_threshold.py and 10_chebyshev_species_search.py,")
-    print("  and the manuscript's species-threshold Remark for the full account.")
+    print("  species eigenvalue: not searched in the unscaled variable (the species layer is")
+    print("  too thin for a practical search there). Unscaled collocation (script 10) finds no")
+    print("  resolution-stable discrete eigenvalue for gamma < 700. The smallest species")
+    print("  eigenvalue, 5.730e4, comes from the stretched variable zeta = Sc*eta in")
+    print("  rr_constitutive/run_species_spectrum.py (collocation and shooting on the same")
+    print("  equation); see the species Remark in the Supplementary Material.")
     return roots_M, gamma_T
 
 

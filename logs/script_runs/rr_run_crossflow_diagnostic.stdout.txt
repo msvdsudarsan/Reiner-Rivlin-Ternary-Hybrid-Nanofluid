@@ -1,0 +1,16 @@
+Newtonian disk: eta_c=1.458 eps=13.22 deg
+
+K=+0.3, S=1.5
+  lambda= 0.0000  (0.716, 1.16 deg)
+  lambda=-0.4469  none
+  lambda=-1.0000  (0.472, -76.44 deg)  (3.532, 2.40 deg)
+  lambda=-2.0000  (1.769, 81.68 deg)  (2.919, 24.97 deg)
+  lambda=-3.0000  none
+  lambda=-4.0000  none
+
+K=-0.3, S=1.5
+  lambda= 0.0000  (0.680, 6.08 deg)
+  lambda=-0.3000  (1.728, 0.68 deg)
+  lambda=-0.6036  (0.123, -80.01 deg)  (2.560, 0.50 deg)
+  lambda=-1.0000  (0.475, -74.22 deg)  (2.570, 2.73 deg)
+  lambda=-1.6000  (0.994, 88.42 deg)  (2.224, 11.90 deg)

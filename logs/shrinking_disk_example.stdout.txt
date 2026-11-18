@@ -1,0 +1,21 @@
+min(1-2KF) = 0.9200
+wall gradients: F'(0)=1.028334  G'(0)=-1.031445  H(inf)=-1.208575 (Newtonian G'(0)=-1.039983)
+torque ratio RR/Newtonian - 1 = -8.7553 %
+tau_thz = -46.72935 Pa (formula eta0*q*G'(0)*(1-2K*lam) = -46.72935)
+tau_rr-tau_thth = 0.1554 Pa, tau_thth-tau_zz = 3.5637 Pa, tau_rr-tau_zz = 3.7191 Pa
+smallest real eigenvalues (|gamma|>1e-3): [0.24927186 0.38531381 0.38999777]
+A1 (Pa-free, 1/s) =
+ [[ -8.       0.      50.6396]
+ [  0.      -8.     -50.7928]
+ [ 50.6396 -50.7928  16.    ]]
+A1^2 =
+ [[ 2628.37 -2572.12   405.12]
+ [-2572.12  2643.91  -406.34]
+ [  405.12  -406.34  5400.27]]
+rr-thth  total 0.1554 = Newtonian 0.0000 + mu_c*A1^2 part 0.1554
+thth-zz  total 3.5637 = Newtonian -24.0000 + mu_c*A1^2 part 27.5637
+rr-zz    total 3.7191 = Newtonian -24.0000 + mu_c*A1^2 part 27.7191
+closed form tau_thth-tau_zz = 6*eta0*Om*lam + mu_c*(-12*Om^2*lam^2 - q^2*F'(0)^2) = 3.5637
+wall velocities at r=R: u_r = -0.2000 m/s, u_theta = 0.5000 m/s
+axial velocity at the wall: -0.15230 m/s (suction S=1.5); far field (entrainment) -0.12271 m/s
+check: F(0)=-0.4000 G(0)=1.0000 H(0)=-1.5000

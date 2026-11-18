@@ -1,0 +1,9 @@
+Chebyshev collocation, smallest species eigenvalue:
+   N=160  zeta_inf=   60  ->  gamma_1 =    57362.9
+   N=200  zeta_inf=   80  ->  gamma_1 =    57301.9
+   N=240  zeta_inf=  100  ->  gamma_1 =    57300.9
+   N=280  zeta_inf=  120  ->  gamma_1 =    57301.2
+
+independent shooting root : gamma_1 = 57301.9
+collocation reference     : gamma_1 = 57301
+relative difference       : 0.0016%

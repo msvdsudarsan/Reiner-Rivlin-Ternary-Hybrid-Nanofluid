@@ -1,0 +1,191 @@
+LAMMPS (22 Jul 2025 - Update 4)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread.
+  using 1 OpenMP thread(s) per MPI task
+Reading data file ...
+  orthogonal box = (0 0 0) to (13.300573 13.300573 13.300573)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  2000 atoms
+  reading velocities ...
+  2000 velocities
+  scanning bonds ...
+  1 = max bonds/atom
+  orthogonal box = (0 0 0) to (13.300573 13.300573 13.300573)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  1900 bonds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        1        1       
+  special bond factors coul:  0        1        1       
+     2 = max # of 1-2 neighbors
+     2 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+  read_data CPU = 0.022 seconds
+Changing box ...
+  triclinic box = (0 0 0) to (13.300573 13.300573 13.300573) with tilt (0 0 0)
+Generated 0 of 0 mixed pair_coeff terms from geometric mixing rule
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+Neighbor list info ...
+  update: every = 1 steps, delay = 1 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 1.5224615
+  ghost atom cutoff = 1.5224615
+  binsize = 0.76123076, bins = 18 18 18
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair lj/cut, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton/tri
+      stencil: half/bin/3d/tri
+      bin: standard
+Setting up Verlet run ...
+  Unit style    : lj
+  Current step  : 0
+  Time step     : 0.005
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Inconsistent image flags
+For more information see https://docs.lammps.org/err0027 (src/src/domain.cpp:1052)
+Per MPI rank memory allocation (min/avg/max) = 4.296 | 4.296 | 4.296 Mbytes
+   Step          Temp          E_pair         E_mol          TotEng         Press          Volume    
+         0   1.0517072      0.46712239     19.679769      21.723664      5.158838       2352.9411    
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Communication cutoff 1.5224615296218902 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:743)
+WARNING: Too many warnings: 2263 vs 100. All future warnings will be suppressed
+     20000   0.99140679     0.48012406     19.67056       21.637051      4.9685219      2352.9411    
+     40000   1.0344487      0.44321039     19.646884      21.640992      4.770296       2352.9411    
+     60000   1.0120265      0.45933309     19.66747       21.644084      5.0558108      2352.9411    
+     80000   1.0491803      0.47118667     19.681422      21.725592      5.3869233      2352.9411    
+    100000   1.0141206      0.4831023      19.653844      21.657367      4.8557578      2352.9411    
+    120000   0.97819559     0.44478809     19.659005      21.570353      4.8636305      2352.9411    
+    140000   1.021555       0.45309875     19.667628      21.652293      5.0235038      2352.9411    
+    160000   1.0427609      0.4649381      19.68037       21.708667      4.7681703      2352.9411    
+    180000   1.0108241      0.47061654     19.637653      21.623747      4.6903581      2352.9411    
+    200000   0.98063722     0.48147214     19.658343      21.610036      4.8798229      2352.9411    
+    220000   1.0237373      0.49513132     19.639012      21.668982      5.0277223      2352.9411    
+    240000   0.98058495     0.45206644     19.677212      21.59942       4.8199482      2352.9411    
+    260000   1.0502829      0.48867088     19.673274      21.736581      5.0430254      2352.9411    
+    280000   0.9977318      0.47027841     19.653567      21.619695      5.0726732      2352.9411    
+    300000   1.0031765      0.50418332     19.681608      21.689803      4.9379341      2352.9411    
+Loop time of 164.845 on 1 procs for 300000 steps with 2000 atoms
+
+Performance: 786193.243 tau/day, 1819.892 timesteps/s, 3.640 Matom-step/s
+98.4% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 29.552     | 29.552     | 29.552     |   0.0 | 17.93
+Bond    | 7.0131     | 7.0131     | 7.0131     |   0.0 |  4.25
+Neigh   | 89.443     | 89.443     | 89.443     |   0.0 | 54.26
+Comm    | 4.5261     | 4.5261     | 4.5261     |   0.0 |  2.75
+Output  | 0.00056532 | 0.00056532 | 0.00056532 |   0.0 |  0.00
+Modify  | 31.869     | 31.869     | 31.869     |   0.0 | 19.33
+Other   |            | 2.441      |            |       |  1.48
+
+Nlocal:           2000 ave        2000 max        2000 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:           1720 ave        1720 max        1720 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:          10011 ave       10011 max       10011 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 10011
+Ave neighs/atom = 5.0055
+Ave special neighs/atom = 1.9
+Neighbor list builds = 34634
+Dangerous builds = 0
+Total wall time: 0:02:44
