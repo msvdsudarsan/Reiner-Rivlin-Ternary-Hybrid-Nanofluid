@@ -2,8 +2,8 @@
 
 Python code, data and figures supporting the manuscript
 
-> **The second normal-stress coefficient sets the regularity boundary of the
-> Reiner-Rivlin rotating-disk similarity reduction**
+> **Regularity termination of the Reiner-Rivlin rotating-disk similarity
+> reduction governed by the second normal-stress coefficient**
 >
 > S. V. D. S. Madhyannapu, K. Subbarao, G. Arunagiri, P. K. Cintaginjala,
 > A. Kiran Kumar, D. R. Krishna Thippisetti
@@ -341,3 +341,8 @@ things and writes them to `data/conditioning_check.csv` (K = -0.3, S = 1.5).
 Taken together with the denominator-floor test and the continuation results this is
 consistent with termination being a property of the solution; none of these checks is a proof.
 
+
+Pressure-compatible closure: `python/compatible_pressure_check.py` compares the wall shear of the zero-gradient and
+compatible closures at K = -0.2, S = 1.5, and `python/compatible_pressure_sweep.py` continues the compatible system
+to 0.99 of the critical shrinking rate for eleven (K, S) pairs. Output: `data/compatible_pressure_sweep.csv`
+(tolerance 1e-8; the 1e-10 recheck columns show it was reached for one pair only).
