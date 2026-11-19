@@ -1,7 +1,0 @@
-Printed values converted: first 2.51899, second 2.08358
-Part A (vartheta = 2.8, S = 5.6): converged Cf values = [np.float64(17.0812), np.float64(17.1031), np.float64(20.6557), np.float64(33.1138)]
-  Cf/(1-2K lambda) gives F'(0); compare with the converted printed values above.
-
-Part B, S = 5.6: continuation reached lambda = -2.400, F'(0) = 4.0383
-Part B, S = 2.8: continuation reached lambda = -2.400, F'(0) = 1.7190
-S = 5.6 is the operating point of their Table 2. The S = 2.8 value is a different case.

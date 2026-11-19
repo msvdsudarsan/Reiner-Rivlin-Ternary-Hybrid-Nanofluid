@@ -1,2 +1,0 @@
-    lam  1-2K*lam sigma_min(J)    kappa(J)   eta_min  min|1-2KF|   F''(0) at N=160/200/240
-wrote data/conditioning_check.csv

@@ -1,1 +1,0 @@
-clip tol=1e-12: reached lambda=-5.020000 max F=1.663002 (1/2K=1.666667)

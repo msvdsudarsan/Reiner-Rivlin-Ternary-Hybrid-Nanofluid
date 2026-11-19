@@ -1,0 +1,11 @@
+K,S,closure,N,L,lambda_crossing_or_last,status
+0.0,1.5,zero-gradient,80,30.0,-3.197154211671141,zero crossing
+0.0,1.5,zero-gradient,100,40.0,-3.1971540912033327,zero crossing
+0.3,1.5,zero-gradient,80,30.0,-1.6053591362091402,zero crossing
+0.3,1.5,zero-gradient,100,40.0,-1.6053591386552557,zero crossing
+0.3,1.5,compatible,80,30.0,-2.5,no crossing; growth rate -0.215 at last lambda
+0.3,1.5,compatible,100,40.0,-2.5,no crossing; growth rate -0.207 at last lambda
+-0.3,1.5,zero-gradient,80,30.0,-1.6500000000000001,no crossing; growth rate -0.288 at last lambda
+-0.3,1.5,zero-gradient,100,40.0,-1.6500000000000001,no crossing; growth rate -0.281 at last lambda
+-0.3,1.5,compatible,80,30.0,-1.6500000000000001,no crossing; growth rate -0.311 at last lambda
+-0.3,1.5,compatible,100,40.0,-1.6500000000000001,no crossing; growth rate -0.284 at last lambda

@@ -1,9 +1,0 @@
-=== Newtonian limit check (K=0, lambda=0, S=0) ===
-F'(0)    = 0.510233   (classical tabulated value: 0.5102)
--G'(0)   = 0.615922   (classical tabulated value: 0.6159)
--H(inf)  = 0.884473   (classical tabulated value: 0.8845)
-
-These are the well-known textbook von Karman rotating-disk values
-(no stretching, no cross-viscosity, no suction) -- if the three lines
-above are each close to their reference, the equations and solver
-are behaving correctly.

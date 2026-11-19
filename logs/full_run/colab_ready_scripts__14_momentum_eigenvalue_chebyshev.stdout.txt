@@ -1,9 +1,0 @@
-=== Baseline K=0.3, lambda=0.5, S=0.5: corrected Chebyshev collocation, Hf eliminated ===
-  N=  50, eta_max= 20.0: lowest few positive real eigs = [0.418615 0.500813 0.504378 0.60314 ]
-  N=  60, eta_max= 20.0: lowest few positive real eigs = [0.418617 0.500832 0.504348 0.603055]
-  N=  70, eta_max= 25.0: lowest few positive real eigs = [0.418576 0.485806 0.487953 0.548881]
-  N=  80, eta_max= 25.0: lowest few positive real eigs = [0.418576 0.485805 0.487954 0.548883]
-  N=  90, eta_max= 30.0: lowest few positive real eigs = [0.418571 0.4784   0.47973  0.520486]
-  N= 100, eta_max= 30.0: lowest few positive real eigs = [0.418571 0.4784   0.47973  0.520487]
-  N= 110, eta_max= 35.0: lowest few positive real eigs = [0.41857  0.474225 0.475093 0.504175]
-  N= 120, eta_max= 35.0: lowest few positive real eigs = [0.41857  0.474229 0.475084 0.504151]

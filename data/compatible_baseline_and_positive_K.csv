@@ -1,0 +1,13 @@
+quantity,closure,value
+Fp0 K=0.3 lam=0.5 S=0.5,compatible,-0.8174467367650274
+Gp0 K=0.3 lam=0.5 S=0.5,compatible,-1.205122448340729
+Fp0 K=0 lam=0.5 S=0.5,compatible,-0.287469565181875
+Gp0 K=0 lam=0.5 S=0.5,compatible,-1.3623910902583498
+last converged lambda K=0.3 S=1.5,compatible,-3.5000000000000004
+max F at last lambda,compatible,1.6501913355211235
+Fp0 K=0.3 lam=0.5 S=0.5,zero-gradient,-0.4429688001679247
+Gp0 K=0.3 lam=0.5 S=0.5,zero-gradient,-1.368065929364407
+Fp0 K=0 lam=0.5 S=0.5,zero-gradient,-0.287469565181875
+Gp0 K=0 lam=0.5 S=0.5,zero-gradient,-1.3623910902583498
+last converged lambda K=0.3 S=1.5,zero-gradient,-5.0
+max F at last lambda,zero-gradient,1.6513247799351622

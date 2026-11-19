@@ -1,7 +1,0 @@
-Reiner-Rivlin  coeff F''' = 0
-Reiner-Rivlin  coeff F''  = -Omega**2*r*(2*F0*Omega*mu_c - mu)/nu   (after H' = -2F)
-second-order   coeff F''' = H0*Omega**3*alpha_1*r/nu
-second-order   coeff F''  = -Omega**2*r*(2*F0*Omega*mu_c - mu)/nu   (after H' = -2F)
-
-difference in the F'' coefficient: 0
-the alpha_1 contributions cancel exactly: the critical factor is set by mu_c alone

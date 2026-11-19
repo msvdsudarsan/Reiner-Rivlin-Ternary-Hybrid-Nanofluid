@@ -1,7 +1,0 @@
-K=0: 0 F'(0)=0.510233 G'(0)=-0.615922 H(inf)=-0.884474
-K=-0.0314: status 0 F'(0)=0.513964 G'(0)=-0.610770 H(inf)=-0.889620 min(1-2KF)=1.0000 max F=0.1824
-K=-0.1000: status 0 F'(0)=0.521579 G'(0)=-0.599321 H(inf)=-0.900803 min(1-2KF)=1.0000 max F=0.1858
-K=-0.3142: status 0 F'(0)=0.540741 G'(0)=-0.562518 H(inf)=-0.935063 min(1-2KF)=1.0000 max F=0.1959
-Omega=31.4159 rad/s K=Psi2*Om/eta0=-0.03142 r*sqrt(Om/nu) at rim=35.449 Re_R=1256.6
-Newtonian: -G'(0)=0.61592 torque/face M=8.619665e-05 N m  rim shear rate=890.7 1/s  rim wall shear stress=8.907 Pa  rim Wi2=0.000  entrainment Q=1.970017e-05 m3/s  N2(rim)=0.000 Pa
-RR K=-0.0314: -G'(0)=0.61077 torque/face M=8.547534e-05 N m  rim shear rate=889.0 1/s  rim wall shear stress=8.890 Pa  rim Wi2=0.889  entrainment Q=1.981485e-05 m3/s  N2(rim)=-7.903 Pa

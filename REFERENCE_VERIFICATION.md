@@ -1,8 +1,7 @@
 # Reference verification
 
 `data/reference_audit_ledger.csv` lists every work cited in the manuscript or in
-its supplementary material (52 entries: 41 in the main bibliography and 11 cited
-only in the supplement), with the level of checking reached for each.
+its supplementary material (36 entries cited in the main text or the supplement), with the level of checking reached for each.
 
 Three levels are kept apart:
 

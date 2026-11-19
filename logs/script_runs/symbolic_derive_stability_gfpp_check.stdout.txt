@@ -1,6 +1,0 @@
-Ffpp check (0 expected -- confirms this formula was always correct):
-   0
-Gfpp check against earlier code (nonzero => bug confirmed):
-   2*K*(Ff(eta)*Derivative(G0(eta), (eta, 2)) - Gf(eta)*Derivative(F0(eta), (eta, 2)))
-Gfpp check against corrected code (0 expected):
-   0
